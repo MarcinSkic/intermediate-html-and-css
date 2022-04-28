@@ -10,27 +10,33 @@
 </head>
 
 <body>
-    <form action="/somewebsitethatdoesntexist">
+    <form action="/somewebsitethatdoesntexist" method="POST">
         <h1>Payment form</h1>
         <p>Required fields are followed by <abbr title="required"><strong>*</strong></abbr>.</p>
         <section>
             <h2>Contact information</h2>
-            <fieldset>
+            <fieldset disabled>
                 <legend>Title</legend>
                 <ul>
                     <li>
                         <label for="title_1">
+                            <span>Mr</span>
                             <input type="radio" name="title" id="title_1">
+                            
                         </label>
                     </li>
                     <li>
                         <label for="title_2">
+                            <span>Ms</span>
                             <input type="radio" name="title" id="title_2">
+                            
                         </label>
                     </li>
                     <li>
                         <label for="title_3">
+                            <span>Other</span>
                             <input type="radio" name="title" id="title_3">
+                            
                         </label>
                     </li>
                 </ul>
