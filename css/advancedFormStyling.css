@@ -1,0 +1,152 @@
+form {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/*CHECKBOXES*/
+section#checkboxes input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+section#checkboxes input[type="checkbox"] {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border: 1px solid gray;
+    /* Adjusts the position of the checkboxes on the text baseline */
+    vertical-align: -2px;
+    /* Set here so that Windows' High-Contrast Mode can override */
+    color: green;
+  }
+
+section#checkboxes  input[type="checkbox"]::before {
+    content: "✔";
+    position: absolute;
+    font-size: 1.2em;
+    right: -1px;
+    top: -0.3em;
+    visibility: hidden;
+}
+
+section#checkboxes input[type="checkbox"]:checked::before {
+    /* Use `visibility` instead of `display` to avoid recalculating layout */
+    visibility: visible;
+}
+
+section#checkboxes input[type="checkbox"]:disabled {
+    border-color: black;
+    background: #ddd;
+    color: gray;
+}
+
+/*UGLY ONES*/
+section#uglyOnes form > div {
+    margin-bottom: 20px;
+  }
+  
+  section#uglyOnes  select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  section#uglyOnes .select-wrapper {
+    position: relative;
+  }
+  
+  section#uglyOnes .select-wrapper::after {
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+  }
+  
+  section#uglyOnes button, label, input, select, progress, meter {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+  }
+  
+  section#uglyOnes input[type="text"], input[type="datetime-local"], select {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+  }
+
+  section#uglyOnes input[type="color"] {
+    border: 0;
+    padding: 0;
+  }
+  
+  section#uglyOnes label {
+    margin-bottom: 5px;
+  }
+  
+  section#uglyOnes button {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+/*GENERATED CONTENT*/
+#generatedContent input {
+    max-width: 95%;
+}
+
+label[for="firstname"]::after {
+    margin-left: auto;
+    content: "asdda";
+}
+
+section#generatedContent legend {
+    background-color: black;
+    padding: 0 10px;
+    color: aliceblue;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  input + span {
+    position: relative;
+  }
+
+  input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -26px;
+    left: -70px;
+  }
+
+  input:invalid {
+      border: 2px solid red;
+      box-shadow: none;
+  }
+
+  input + span::before{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  input:invalid + span::before{
+    content: "✖";
+    color: red;
+  }
+
+  input:valid + span::before{
+    content: "✓";
+    color: green;
+  }
