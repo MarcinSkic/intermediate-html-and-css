@@ -98,11 +98,6 @@ section#uglyOnes form > div {
     max-width: 95%;
 }
 
-label[for="firstname"]::after {
-    margin-left: auto;
-    content: "asdda";
-}
-
 section#generatedContent legend {
     background-color: black;
     padding: 0 10px;
@@ -149,4 +144,10 @@ fieldset > div {
   input:valid + span::before{
     content: "✓";
     color: green;
+  }
+
+  input:out-of-range + span::after {
+    content: "Outside allowable value range";
+    background-color: red;
+    left: -175px;
   }
