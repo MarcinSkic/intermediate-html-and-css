@@ -8,6 +8,7 @@ form {
 section#checkboxes input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
+  
 }
 
 section#checkboxes input[type="checkbox"] {
