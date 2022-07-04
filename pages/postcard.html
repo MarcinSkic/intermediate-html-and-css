@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stapleDesign.css">
     <title>Postcard</title>
     <style>
         @font-face {
@@ -22,10 +23,8 @@
             font-style: normal;
         }
 
-        body {
+        main {
             font: 1.3rem sans-serif;
-            padding: 0.5em;
-            margin: 0;
             background: #222;
         }
 
@@ -44,7 +43,7 @@
             grid-template-rows    : 10em 1em 1em 1em;
         }
 
-        h1 {
+        h2 {
             font : 1em "typewriter", monospace;
             align-self : end;
         }
@@ -110,27 +109,30 @@
     </style>
 </head>
 <body>
-    <form action="mailto:s95565@pollub.edu.pl" method="post">
-        <h1>to: Mozilla</h1>
+    <header>
+        <h1>Postcard</h1>
+    </header>
+    <a href="../index.html" class="return-to-menu">Return to Index</a>
 
-        <div id="from">
-            <label for="name">from:</label>
-            <input type="text" id="name" name="user_name">
-        </div>
-
-        <div id="reply">
-            <label for="mail">reply:</label>
-            <input type="email" id="mail" name="user_email">
-        </div>
-
-        <div id="message">
-            <label for="msg">Your message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-
-        <div class="button">
-            <button type="submit">Send your message</button>
-        </div>
-    </form>
+    <main>
+        <form action="mailto:s95565@pollub.edu.pl" method="post">
+            <h2>to: Mozilla</h2>
+            <div id="from">
+                <label for="name">from:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div id="reply">
+                <label for="mail">reply:</label>
+                <input type="email" id="mail" name="user_email">
+            </div>
+            <div id="message">
+                <label for="msg">Your message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Send your message</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

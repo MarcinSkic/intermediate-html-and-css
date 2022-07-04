@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stapleDesign.css">
+    <link rel="stylesheet" href="css/indexDesign.css">
     <title>Document</title>
     <style>
         form li + li {
@@ -22,64 +24,21 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul style='display: flex; gap:10px; list-style: none;'>
-                <li><a href="pages/exampleForm.html">Przykładowy formularz</a></li>
-                <li><a href="pages/postcard.html">Pocztówka</a></li>
-                <li><a href="pages/advancedFormStyling.html">Zaawansowane stylowanie</a></li>
-                <li><a href="pages/speakerSubmission.html">Zapis na konferencję</a></li>
-                <li><a href="pages/planet-data.html">Tabelka o planetach</a></li>
-            </ul>
-        </nav>
+        <h1>Intermediate HTML and CSS</h1>
     </header>
-    <div style='display: flex; gap:10px'>
-        <span>luzno</span>
-        <span>wiszacy</span>
-        <span>sobie</span>
-        <span>tekst</span>
-        <span>ktory</span>
-        <span>zamknąłem</span>
-        <span>w</span>
-        <span>tagach</span>
-        <span>używając</span>
-        <span>emmeta</span>
-    </div>
-    <form action="/my-handling-form-page" method="post">
-        <fieldset>
-            <legend>Contact me</legend>
-            <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li><button type="submit">SEND!!!!!</button></li>
-            </ul>
-            <select name="asd">
-                <optgroup label="Samochody">
-                    <option value="samochod 1">Samochod 1</option>
-                    <option value="samochod 2">Samochod 2</option>
-                    <option value="samochod 3">Samochod 3</option>
-                    <option value="samochod 4">Samochod 4</option>
-                    <option value="samochod 5">Samochod 5</option>
-                </optgroup>
-                <optgroup label="hajo">
-                    <option value="Jeden"></option>
-                    <option value="Dwa"></option>
-                    <option value="Trzy"></option>
-                    <option value="Cztery">Cz</option>
-                    <option value="Pięć">Pc</option>
-                </optgroup>
-            </select>
-        </fieldset>
-    </form>
+    <a href="index.html" class="return-to-menu">Return to Index</a>
+    <nav>
+        <ul>
+            <li><a href="pages/exampleForm.html">Basic form</a></li>
+            <li><a href="pages/speakerSubmission.html">Consistent form styling</a></li>
+            <li><a href="pages/advancedFormStyling.html">Advanced form styling</a></li>
+            <li><a href="pages/postcard.html">Fancy form styling</a></li>
+            <li><a href="pages/spending-record.html">Basic table</a></li>
+            <li><a href="pages/timetable.html">Basic table styling</a></li>
+            <li><a href="pages/animals-table.html">Multicells table</a></li>
+            <li><a href="pages/planet-data.html">Advanced table</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
 <!-- emmet abbreviation $ - numbers * - take each line and create tag for it nav>ul.nav>li.nav-item$*>a -->
